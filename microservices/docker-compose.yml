@@ -10,4 +10,5 @@ services:
           build: ./puppy/
           ports:
             - '82:80'
-          network_mode: bridge
+          network_mode: 
+              bridge
