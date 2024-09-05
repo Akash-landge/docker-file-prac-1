@@ -1,0 +1,13 @@
+services: 
+      counterdeploy:
+          build: ./counter/
+          port: 
+            - '5000:80'
+          network_mode: 
+              bridge
+
+      puppy: 
+          build: ./puppy/
+          port:
+            - '81:80'
+          network_mode: bridge
