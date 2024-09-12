@@ -6,10 +6,7 @@ metadata:
          app: project      
 spec:
  containers:
-    - name: project-cont1
-      image: apiVersion:  v1  
-kind: Pod
-metadata:  #like a tag
+    - name: project-cont1 
         name: project
         labels:
          app: project      
