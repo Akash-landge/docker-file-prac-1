@@ -26,3 +26,10 @@ spec:
       port: 80
       targetPort: 80
       name: todo
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: weatherappprodenv
+  labels:
+        app: weatherappprodenv
