@@ -30,6 +30,7 @@ spec:
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: weatherappprodenv
+  name: mypod
   labels:
-        app: weatherappprodenv
+        app: mypod
+        
