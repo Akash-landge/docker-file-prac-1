@@ -7,7 +7,7 @@ metadata:  #like a tag
 spec:
  containers:
     - name: mypod-cont
-      image: akashlandge/puppy:latest
+      image: https://docker.com/repository/docker/akashlandge/puppy:latest
       resources: 
           requests:
             cpu: "50m"
