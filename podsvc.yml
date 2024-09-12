@@ -2,6 +2,7 @@ apiVersion:  v1  #acts a manuall to your system
 kind: Pod
 metadata:  #like a tag
         name: mypod
+        namespace: tododevenv
         labels:
          app: mypod      
 spec:
@@ -16,7 +17,8 @@ spec:
 apiVersion: v1 
 kind: Service
 metadata:
-        name: lb  #cluster 
+        name: lb  #cluster
+        namespace: tododevenv 
 spec:
     selector:
           app: mypod  
