@@ -1,0 +1,26 @@
+apiVersion: apps/v1 
+kind: DaemonSet 
+metadata:
+        name: prac-daemonset
+        labels: 
+              app: prac-daemonset
+spec:
+     selector:
+           matchLabels:
+                app: prac-daemonset
+     template:
+          metadata:  #like a tag
+              labels: 
+                  app: prac-daemonset
+          spec:
+            containers:
+                - name: mycont-1
+                  image: nginx:latest
+                  resources: 
+                      requests:
+                        cpu: "100m"
+                        memory: "90Mi"        
+                  ports:  
+                    - name: http
+                      containerPort: 80
+                      protocol: TCP    
