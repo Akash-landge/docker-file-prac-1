@@ -18,7 +18,7 @@ spec:
         spec: 
           containers:
              - name: frontendapp
-               image: nginx:latest
+               image: akashlandge/todo:latest
                ports:
                   - containerPort: 80
                     protocol: TCP
